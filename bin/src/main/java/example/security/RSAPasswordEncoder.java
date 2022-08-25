@@ -5,7 +5,7 @@ import javax.xml.bind.DatatypeConverter;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-public class RSAPasswordEncoder extends org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+public class RSAPasswordEncoder extends org.springframework.security.crypto.scrypt.SCryptPasswordEncoder
   implements PasswordEncoder {
 
     KeyPair keypair = null;
